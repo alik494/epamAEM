@@ -1,0 +1,9 @@
+<p data-sly-test="${properties.text}">Text property: ${properties.text}</p>
+
+<pre data-sly-use.hello="epam.core.models.PDFTextFinder">
+HelloWorldModel says:
+${hello.query}
+<div data-sly-list.l="${hello.list}" >
+ <a href="${l}">${l}</a> 
+</div>
+</pre>

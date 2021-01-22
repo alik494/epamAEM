@@ -1,0 +1,7 @@
+{
+  "pdftext": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "epam/components/content/pdftext",
+    "pathf": "Jane Doe"
+  }
+}
