@@ -491,18 +491,19 @@
 
         <dependencies>
             <dependency>
+                <groupId>com.adobe.cq</groupId>
+                <artifactId>core.wcm.components.core</artifactId>
+                <version>2.0.0</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
                 <groupId>org.junit</groupId>
                 <artifactId>junit-bom</artifactId>
                 <version>5.5.2</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-simple</artifactId>
-                <version>1.7.25</version>
-                <scope>test</scope>
-            </dependency>
+
             <dependency>
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-core</artifactId>
@@ -515,12 +516,7 @@
                 <version>2.25.1</version>
                 <scope>test</scope>
             </dependency>
-            <dependency>
-                <groupId>junit-addons</groupId>
-                <artifactId>junit-addons</artifactId>
-                <version>1.4</version>
-                <scope>test</scope>
-            </dependency>
+
             <dependency>
                 <groupId>io.wcm</groupId>
                 <artifactId>io.wcm.testing.aem-mock.junit5</artifactId>
@@ -576,7 +572,7 @@
             <dependency>
                 <groupId>com.adobe.aem</groupId>
                 <artifactId>uber-jar</artifactId>
-                <version>6.3.0</version>
+                <version>6.4.0</version>
                 <classifier>apis</classifier>
                 <scope>provided</scope>
             </dependency>
@@ -642,12 +638,7 @@
                 <version>1.7.25</version>
                 <scope>test</scope>
             </dependency>
-            <dependency>
-                <groupId>org.mockito</groupId>
-                <artifactId>mockito-core</artifactId>
-                <version>2.23.4</version>
-                <scope>test</scope>
-            </dependency>
+
             <dependency>
                 <groupId>junit-addons</groupId>
                 <artifactId>junit-addons</artifactId>
