@@ -49,11 +49,11 @@ public class PDFTextFinder {
     String fragText;
 
     @Inject
-    @Default(values = "QueryManager")
+    @Default(values = "QueryBuilder")
     String api;
 
     @Inject
-    private QueryBuilder builder;
+    private QueryBuilder queryBuilder;
 
     @Inject
     @Source("sling-object")
@@ -122,7 +122,7 @@ public class PDFTextFinder {
             predicate.put("type", "dam:Asset");
             predicate.put("fulltext",fileName);
             predicate.put("group.p.or", "true");
-            Query query = builder.createQuery(PredicateGroup.create(predicate), session);
+            Query query = queryBuilder.createQuery(PredicateGroup.create(predicate), session);
             query.setStart(0);
             query.setHitsPerPage(20);
             SearchResult searchResult = query.getResult();
